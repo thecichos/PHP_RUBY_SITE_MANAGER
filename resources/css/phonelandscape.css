@@ -1,0 +1,151 @@
+/* line 1, sass/phonelandscape.sass */
+#wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 5, sass/phonelandscape.sass */
+#top {
+  height: 30%;
+  max-height: 30%;
+}
+/* line 8, sass/phonelandscape.sass */
+#top header {
+  height: 70%;
+  max-height: 200px;
+}
+/* line 11, sass/phonelandscape.sass */
+#top header #header {
+  margin-top: 1%;
+  margin-right: 30%;
+  margin-bottom: 2%;
+  width: 300px;
+}
+/* line 16, sass/phonelandscape.sass */
+#top header #header h1 {
+  font-size: 1.5em;
+  margin: 0;
+}
+/* line 19, sass/phonelandscape.sass */
+#top header #header h3 {
+  font-size: 0.7em;
+}
+/* line 21, sass/phonelandscape.sass */
+#top header icon {
+  margin-top: 1%;
+  margin-left: 1%;
+}
+/* line 24, sass/phonelandscape.sass */
+#top header icon img {
+  height: 50px;
+  width: auto;
+}
+/* line 27, sass/phonelandscape.sass */
+#top menu ul li, #top .Mscroll ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+/* line 32, sass/phonelandscape.sass */
+#top menu ul li a, #top .Mscroll ul li a {
+  margin-top: 0.5em;
+}
+
+/* line 35, sass/phonelandscape.sass */
+.stationary {
+  max-height: 88%;
+}
+
+/* line 38, sass/phonelandscape.sass */
+#content main {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 41, sass/phonelandscape.sass */
+menu .menu {
+  height: 130px;
+}
+
+/* line 44, sass/phonelandscape.sass */
+.slide {
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+/* line 49, sass/phonelandscape.sass */
+.slide div {
+  margin: 0 auto;
+  height: auto;
+  width: 80%;
+}
+/* line 53, sass/phonelandscape.sass */
+.slide div img {
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+/* line 55, sass/phonelandscape.sass */
+.slide div .first {
+  z-index: 5;
+  opacity: 1;
+  position: inherit;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+  left: 45px;
+}
+/* line 64, sass/phonelandscape.sass */
+.slide div .second, .slide div .last {
+  opacity: 0.3;
+  position: relative;
+  height: auto;
+  width: 0;
+}
+/* line 69, sass/phonelandscape.sass */
+.slide img {
+  opacity: 0;
+  position: absolute;
+  height: 0;
+  width: 0;
+}
+
+/* line 76, sass/phonelandscape.sass */
+#content main .facebook {
+  width: auto;
+  margin: 0 auto;
+  padding-top: 20px;
+  background-color: #3b5998;
+  border-radius: 2px;
+  height: 280px;
+}
+/* line 83, sass/phonelandscape.sass */
+#content main #form {
+  min-width: 0;
+  width: 90%;
+  margin: auto;
+}
+
+/* line 88, sass/phonelandscape.sass */
+#footer {
+  height: 8%;
+  width: 100%;
+  min-height: 50px;
+  height: 50px;
+}
+/* line 94, sass/phonelandscape.sass */
+#footer info #footer_info {
+  font-size: 0.6em;
+  margin-top: 10px;
+}
+/* line 97, sass/phonelandscape.sass */
+#footer info #aspit {
+  font-size: 0.5em;
+}

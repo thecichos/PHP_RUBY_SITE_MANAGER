@@ -1,0 +1,215 @@
+/* line 1, sass/phone.sass */
+#wrapper {
+  width: 100%;
+  overflow: hidden;
+  background-image: url(../images/TRA_swusch_turned.png);
+  background-repeat: no-repeat;
+  background-size: 100% 150px;
+}
+
+/* line 8, sass/phone.sass */
+#top {
+  height: auto;
+  max-height: 30%;
+}
+/* line 11, sass/phone.sass */
+#top header {
+  height: 70%;
+  max-height: 200px;
+  display: inline-block;
+  font-size: 12px;
+}
+/* line 16, sass/phone.sass */
+#top header #header {
+  width: 300px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+/* line 20, sass/phone.sass */
+#top header #header h1 {
+  font-size: 1.2em;
+  margin: 0;
+}
+/* line 23, sass/phone.sass */
+#top header #header h3 {
+  font-size: 0.5em;
+}
+/* line 25, sass/phone.sass */
+#top header icon {
+  margin-top: 1%;
+  margin-left: 1%;
+}
+/* line 28, sass/phone.sass */
+#top header icon img {
+  height: 50px;
+  width: auto;
+}
+
+/* line 32, sass/phone.sass */
+.stationary {
+  max-height: 88%;
+}
+
+/* line 36, sass/phone.sass */
+#content main {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/* line 38, sass/phone.sass */
+#content main .text p img {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  border-left: 0;
+  border-right: 0;
+  width: 100%;
+  max-width: 1000px;
+}
+/* line 47, sass/phone.sass */
+#content .aboutText {
+  display: block;
+}
+
+/* line 50, sass/phone.sass */
+.slide {
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+/* line 55, sass/phone.sass */
+.slide div {
+  margin: 0 auto;
+  height: auto;
+  width: 80%;
+}
+/* line 59, sass/phone.sass */
+.slide div img {
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+/* line 61, sass/phone.sass */
+.slide div .first {
+  z-index: 5;
+  opacity: 1;
+  position: inherit;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+  left: 45px;
+}
+/* line 70, sass/phone.sass */
+.slide div .second, .slide div .last {
+  opacity: 0.3;
+  position: relative;
+  height: auto;
+  width: 0;
+}
+/* line 75, sass/phone.sass */
+.slide img {
+  opacity: 0;
+  position: absolute;
+  height: 0;
+  width: 0;
+}
+
+/* line 81, sass/phone.sass */
+menu {
+  width: 2px;
+  float: right;
+}
+/* line 84, sass/phone.sass */
+menu div {
+  background-color: green;
+  height: 6.33px;
+}
+
+/* line 89, sass/phone.sass */
+#content .facebookContainer {
+  margin: 0 auto;
+}
+/* line 91, sass/phone.sass */
+#content .facebookContainer * {
+  width: 280px;
+}
+/* line 93, sass/phone.sass */
+#content .facebookContainer .img {
+  padding-top: 10px;
+  width: 300px;
+  margin-top: 40px;
+}
+/* line 97, sass/phone.sass */
+#content .facebook {
+  margin: 0 auto;
+  padding-top: 20px;
+  background-color: #3b5998;
+  border-radius: 2px;
+  height: 280px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/* line 106, sass/phone.sass */
+#content main #form {
+  min-width: 0;
+  width: 90%;
+  margin: auto;
+}
+/* line 110, sass/phone.sass */
+#content main .text .aboutText img {
+  height: 200px;
+  width: 200px;
+  float: none;
+}
+
+/* line 115, sass/phone.sass */
+#footer {
+  height: 50px;
+  width: 100%;
+  min-height: 0;
+}
+/* line 119, sass/phone.sass */
+#footer info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* line 121, sass/phone.sass */
+#footer info #footer_info {
+  padding: 0px;
+  min-width: 0;
+  margin-left: 0;
+  font-size: 0.5em;
+  width: 125px;
+}
+/* line 127, sass/phone.sass */
+#footer info #footer_info ul {
+  margin: 0;
+  max-width: 80%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/* line 131, sass/phone.sass */
+#footer info #footer_info ul li::before {
+  height: 10px;
+  width: 10px;
+}
+/* line 134, sass/phone.sass */
+#footer info #aspit {
+  width: 60%;
+  font-size: 0.4em;
+  margin-top: 6em;
+}
+
+/* line 139, sass/phone.sass */
+info #aspit ul li {
+  margin-left: 5px;
+  margin-right: 5px;
+}

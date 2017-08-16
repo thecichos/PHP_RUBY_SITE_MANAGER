@@ -1,0 +1,66 @@
+/* line 1, sass/tablet.sass */
+.slide {
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* line 5, sass/tablet.sass */
+.slide div {
+  margin: 0 auto;
+  height: auto;
+}
+/* line 8, sass/tablet.sass */
+.slide div img {
+  height: auto;
+  width: 310px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+/* line 12, sass/tablet.sass */
+.slide div .first {
+  z-index: 5;
+  opacity: 1;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* line 18, sass/tablet.sass */
+.slide div .second {
+  opacity: 0.3;
+  position: relative;
+  margin-right: -75px;
+  height: auto;
+  width: 300px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+/* line 26, sass/tablet.sass */
+.slide div .last {
+  opacity: 0.3;
+  position: relative;
+  margin-left: -75px;
+  height: auto;
+  width: 300px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+/* line 34, sass/tablet.sass */
+.slide img {
+  opacity: 0;
+  position: absolute;
+  height: auto;
+  width: auto;
+}
+
+/* line 40, sass/tablet.sass */
+#content main #form {
+  margin-right: auto;
+  margin: auto;
+}
+
+/* line 44, sass/tablet.sass */
+#footer info #footer_info {
+  font-size: 1.1em;
+}
