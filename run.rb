@@ -8,8 +8,41 @@ class All_json_actions
     return parsedString
   end
 
-  def make_String_To_list
+  def make_String_To_list options
+    parsedString = read_Json_String("pages/page__index.json")
+    returnArray = []
+    if options.kind_of?(Array)
+      interval_value = 0
 
+      while interval_value < parsedString.length
+
+        tempString = ""
+        inloop_interval_value = 0
+
+        while inloop_interval_value < options.length
+
+          if parsedString[interval_value][options[inloop_interval_value]] == nil
+
+            tempString << "null "
+
+          else
+            tempString << parsedString[interval_value][options[inloop_interval_value]] << " "
+          end
+
+          inloop_interval_value = inloop_interval_value + 1
+
+        end
+
+        # tempString << parsedString[interval_value][options[0]] << " " << parsedString[interval_value][options[1]] << " " << parsedString[interval_value][options[2]]
+
+        returnArray << tempString
+
+        interval_value = interval_value + 1
+
+      end
+    end
+
+    return returnArray
   end
 end
 
@@ -44,6 +77,20 @@ Shoes.app width: width, height: height do
       flow do
         para "innerHTML"
         @new_elem_innerHTML = edit_line
+      end
+
+    end
+
+    stack do
+
+      flow do
+        puts All_json_actions.new.make_String_To_list(["type", "id", "class"])
+        para "current elements"
+        $current_element_list = list_box
+        $current_element_list.items = All_json_actions.new.make_String_To_list(["type", "id", "class"])
+        $current_element_list_action = button "set as parent for new element" do
+          puts "awesome"
+        end
       end
 
     end
